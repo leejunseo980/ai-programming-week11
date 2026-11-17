@@ -1,4 +1,4 @@
-﻿# 성적 관리 프로그램 (load_scores)
+# 성적 관리 프로그램 (load_scores)
 
 ## 무엇을 하나요 (What)
 성적 CSV 파일을 읽어 유효한 점수(0~100 정수)만 골라 내고, 건너뛴 줄은 줄 번호와 이유와 함께 기록합니다.
@@ -18,11 +18,11 @@ python load_scores.py scores.csv
 ## 어떻게 테스트하나요
 ```bash
 pip install pytest pytest-cov
-pytest
-pytest --cov=load_scores --cov-report=term-missing
+pytest test_load_scores.py
+pytest test_load_scores.py --cov=load_scores --cov-report=term-missing
 ```
 
-통과 화면:
+직접 만든 테스트의 통과 화면입니다. (`pytest` 만 실행하면 비교용 test_ai_A.py · test_ai_B.py 까지 돌아 56개가 통과합니다.)
 
 ```
 test_load_scores.py ...............                                      [100%]
